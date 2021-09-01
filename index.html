@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorne - Directory & listing Templates</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="./assets/navbar brand.webp" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" id="Home" aria-current="page"  href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Explore</a></li>
+                    <li><a class="dropdown-item" href="#">Listing</a></li>
+                    <li><a class="dropdown-item" href="#">Signle Listing</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Listing
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Explore</a></li>
+                    <li><a class="dropdown-item" href="#">Listing</a></li>
+                    <li><a class="dropdown-item" href="#">Signle Listing</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+           <div class="search">
+            <i class="fas fa-search"></i>
+            Search
+           </div>
+           <p id="sign">Sign in or Register</p>
+           <button class="btn add">+ Add Listings</button>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="headerFilter"></div>
+        <div class="headerChild">
+          <div class="headerSidebar">
+            <div class="rotated">
+              <p>Follow us on Social Media</p>
+              <hr>
+            </div>
+           <div class="sidebarIcons">
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-behance"></i>
+              <i class="fab fa-dribbble"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+           </div>
+        </div>
+          <div class="headerMid">
+            <div class="headerText">
+              <h1>Discover places near you</h1>
+              <span>This is the best guide of your city</span>
+            </div>
+            <div class="headerForm">
+              <div class="headerRow">
+                <p>PLACES</p>
+                <p>EVENTS</p>
+              </div>
+              <form>
+                <p>What are you looking for?</p>
+                <div class="formRow">
+                  <select name="destination" id="dest">
+                    <option>Your destination</option>
+                    <option>Bucharest</option>
+                    <option>Brazilia</option>
+                    <option>New York</option>
+                    <option>Washington</option>
+                  </select>
+                  <select name="category" id="category">
+                    <option>All catagories</option>
+                    <option>category 1</option>
+                    <option>category 2</option>
+                    <option>category 3</option>
+                  </select>
+                  <select name="priceRange" id="priceRange">
+                    <option>Price range</option>
+                    <option>$100-$499</option>
+                    <option>$500-$1000</option>
+                    <option>$1000-$2000</option>
+                  </select>
+                  <button class="btn search-btn">  <i class="fas fa-search"></i> Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class="categories" id="category-trigger">
+      <div class="category hotel"
+      data-aos="fade-up"
+      data-aos-anchor='.category'
+      data-aos-delay="100"
+      data-aos-anchor-placement="bottom-bottom"
+      >
+        <img  src="./assets/hotel.webp" alt="">
+        <p>Hotels</p>
+      </div>
+      <div class="category restaruant"
+      data-aos="fade-up"
+      data-aos-anchor='.category'
+      data-aos-delay="200"
+      data-aos-anchor-placement="bottom-bottom">
+        <img  src="./assets/coffe.webp" alt="">
+        <p>Restaurants</p>
+      </div>
+      <div class="category shopping"
+      data-aos="fade-up"
+      data-aos-anchor='.category'
+      data-aos-delay="300"
+      data-aos-anchor-placement="bottom-bottom">
+        <img  src="./assets/to the moon.webp" alt="">
+        <p>Shopping</p>
+      </div>
+      <div class="category spa"
+      data-aos="fade-up"
+      data-aos-anchor='.category'
+      data-aos-delay="400"
+      data-aos-anchor-placement="bottom-bottom">
+        <img  src="./assets/spa.webp" alt="">
+        <p>Beaty & Spa</p>
+      </div>
+      <div class="category cinmea"
+      data-aos="fade-up"
+      data-aos-anchor='.category'
+      data-aos-delay="500"
+      data-aos-anchor-placement="bottom-bottom">
+        <img  src="./assets/cinema.webp" alt="">
+        <p>Cinema</p>
+      </div>
+    </div>
+    <h1 class="discover">
+      DISCOVER YOUR CITY WITH
+    </h1>
+    <h1 class="dorne">DORNE</h1>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi asperiores voluptates quis. Cupiditate dolorem id eligendi sint saepe, nihil error itaque nam atque. At laudantium nulla veniam impedit perferendis aperiam culpa nobis recusandae adipisci?</p>
+    <div class="mustSee">
+      <div class="mustSeeFilter">
+
+        <div class="mustSeeChild">
+          <div class="mustSeeChildText">
+            <span class="hr"></span>
+            <h1>CITIES YOU MUST SEE</h1>
+            <span>Developer’s pick</span>
+          </div>
+          <div class="mustSeePicturesDiv">
+            <div class="mustSeePicture"
+            data-aos="fade-up"
+            data-aos-anchor='.mustSeePicture'
+            data-aos-delay="200"
+>
+              <div class="mustPicRow">
+                <p>NEW YORK</p>
+                <p>1643 Destinations</p>
+              </div>
+              <button class="btn">+</button>
+            </div>
+            <div class="mustSeeCol">
+              <div class="mustSeePicture
+              "  data-aos="fade-up"
+              data-aos-anchor='.mustSeePicture'
+              data-aos-delay="300"
+              data-aos-anchor-placement="top-center">
+                <div class="mustPicRow">
+                  <p>BARCELONA</p>
+                  <p>943 Destinations</p>
+                </div>
+                <button class="btn">+</button>
+              </div>
+            <div class="mustSeePicture"
+            data-aos="fade-up"
+            data-aos-anchor='.mustSeePicture'
+            data-aos-delay="100"
+            data-aos-anchor-placement="top-center">
+              <div class="mustPicRow">
+                <p>PARIS</p>
+                <p>452 Destinations</p>
+              </div>
+              <button class="btn">+</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="destinationDiv">
+      <div class="destText ">
+        <span class="hr"></span>
+        <h1>CITIES YOU MUST SEE</h1>
+        <span>Developer’s pick</span>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide two-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="destPic">
+              <p class="destPicPrice">FROM $59/night</p>
+              <img src="./assets/ibiza.webp" alt="">
+              <div class="destPicBot">
+                <div class="destLocation">
+                  <h1>IBIZA</h1>
+                  <p>Party</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="destPic">
+              <p class="destPicPrice">FROM $59/night</p>
+              <img src="./assets/paris dest.webp" alt="">
+              <div class="destPicBot">
+                <div class="destLocation">
+                  <h1>PARIS</h1>
+                  <p>Party</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">           
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/lake como.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>LAKE COMO</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/greece.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>GREECE</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+          </div>
+          <div class="carousel-item">
+                <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/greece.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>GREECE</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/norway.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>NORWAY</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="onecarousel" class="carousel slide one-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/ibiza.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>IBIZA</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="destPic">
+              <p class="destPicPrice">FROM $59/night</p>
+              <img src="./assets/paris dest.webp" alt="">
+              <div class="destPicBot">
+                <div class="destLocation">
+                  <h1>PARIS</h1>
+                  <p>Party</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/lake como.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>LAKE COMO</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+          </div>
+          <div class="carousel-item">
+            <div class="destPic">
+              <p class="destPicPrice">FROM $59/night</p>
+              <img src="./assets/greece.webp" alt="">
+              <div class="destPicBot">
+                <div class="destLocation">
+                  <h1>GREECE</h1>
+                  <p>Party</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="destPic">
+              <p class="destPicPrice">FROM $59/night</p>
+              <img src="./assets/norway.webp" alt="">
+              <div class="destPicBot">
+                <div class="destLocation">
+                  <h1>NORWAY</h1>
+                  <p>Party</p>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#onecarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#onecarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="destPics">
+
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/ibiza.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>IBIZA</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/paris dest.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>PARIS</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/lake como.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>LAKE COMO</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/greece.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>GREECE</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="destPic">
+          <p class="destPicPrice">FROM $59/night</p>
+          <img src="./assets/norway.webp" alt="">
+          <div class="destPicBot">
+            <div class="destLocation">
+              <h1>NORWAY</h1>
+              <p>Party</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurantsDiv">
+      <div class="resaurantsText">
+        <span class="hr"></span>
+        <h1>FEATURED RESTAURANTS</h1>
+        <p>Developer’s pick</p>
+      </div>
+      <div id="restTwoSlider" class="carousel slide two-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/bar.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Martha's bar</h1>
+                  <p>Manhathan</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/delux.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Delux restaruant</h1>
+                  <p>Paris</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item"> 
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/JIM.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Jim's corner pub</h1>
+                  <p>Manhathan</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/tower.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Tower risto bar</h1>
+                  <p>Sydney</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>           
+          <div class="carousel-item">
+ 
+ 
+            <div class="restPic pizza">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/pizza.jpg" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Pizzeria venezia</h1>
+                  <p>Hong Kong</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#restTwoSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restTwoSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="restOneSlider" class="carousel slide one-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/bar.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Martha's bar</h1>
+                  <p>Manhathan</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item"> 
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/delux.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Delux restaruant</h1>
+                  <p>Paris</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+          </div>           
+          <div class="carousel-item">
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/JIM.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Jim's corner pub</h1>
+                  <p>Manhathan</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/tower.webp" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Tower risto bar</h1>
+                  <p>Sydney</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="restPic">
+              <div class="restRatingDiv">
+                <p class="restRating">8.5</p>
+                <div class="restRatingGps">
+                  <img src="./assets/gps.webp" alt="">
+                </div>
+              </div>
+              <img src="./assets/pizza.jpg" alt="">
+              <div class="restPicBot">
+                <div class="restLocation">
+                  <h1>Pizzeria venezia</h1>
+                  <p>Hong Kong</p>
+                </div>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#restOneSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restOneSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="restPics">
+        <div class="restPic">
+          <div class="restRatingDiv">
+            <p class="restRating">8.5</p>
+            <div class="restRatingGps">
+              <img src="./assets/gps.webp" alt="">
+            </div>
+          </div>
+          <img src="./assets/bar.webp" alt="">
+          <div class="restPicBot">
+            <div class="restLocation">
+              <h1>Martha's bar</h1>
+              <p>Manhathan</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="restPic">
+          <div class="restRatingDiv">
+            <p class="restRating">8.5</p>
+            <div class="restRatingGps">
+              <img src="./assets/gps.webp" alt="">
+            </div>
+          </div>
+          <img src="./assets/delux.webp" alt="">
+          <div class="restPicBot">
+            <div class="restLocation">
+              <h1>Delux restaruant</h1>
+              <p>Paris</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="restPic">
+          <div class="restRatingDiv">
+            <p class="restRating">8.5</p>
+            <div class="restRatingGps">
+              <img src="./assets/gps.webp" alt="">
+            </div>
+          </div>
+          <img src="./assets/JIM.webp" alt="">
+          <div class="restPicBot">
+            <div class="restLocation">
+              <h1>Jim's corner pub</h1>
+              <p>Manhathan</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="restPic">
+          <div class="restRatingDiv">
+            <p class="restRating">8.5</p>
+            <div class="restRatingGps">
+              <img src="./assets/gps.webp" alt="">
+            </div>
+          </div>
+          <img src="./assets/tower.webp" alt="">
+          <div class="restPicBot">
+            <div class="restLocation">
+              <h1>Tower risto bar</h1>
+              <p>Sydney</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="restPic">
+          <div class="restRatingDiv">
+            <p class="restRating">8.5</p>
+            <div class="restRatingGps">
+              <img src="./assets/gps.webp" alt="">
+            </div>
+          </div>
+          <img src="./assets/pizza.jpg" alt="">
+          <div class="restPicBot">
+            <div class="restLocation">
+              <h1>Pizzeria venezia</h1>
+              <p>Hong Kong</p>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="eventsDiv">
+      <div class="eventsFilter">
+        <div class="eventsText" id="eventsText">
+          <span class="hr"></span>
+          <h1>FEATURED EVENTS</h1>
+          <span>Developer’s picks</span>
+        </div>
+        <div class="eventsGrid">
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="300"
+            >
+            <img src="./assets/jazz.jpg" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>Jazz concert</h1>
+              <span>Manhathan</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, iste...</p>
+            </div>
+            <div class="plus">+</div>
+          </div>
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="300"
+            >
+            <img src="./assets/dj.webp" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>Deejay in the house</h1>
+              <span>Manhathan</span>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, saepe?</p>
+              
+            </div>
+            <div class="plus">+</div>
+          </div>
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="600"
+            >
+            <img src="./assets/theater.jpg" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>Theatre night outside</h1>
+              <span>Manhathan</span>
+              <p>Iste doloremque a asperiores numquam distinctio similique molestiae, maxime ex.</p>
+            </div>
+            <div class="plus">+</div>
+          </div>
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="600"
+            >
+            <img src="./assets/wine tasting.jpg" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>Wine tasting</h1>
+              <span>Manhathan</span>
+              <p>Excepturi tempore magni libero illo! Cumque repudiandae ducimus culpa soluta.</p>
+            </div>
+            <div class="plus">+</div>
+          </div>
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="900"
+            >
+            <img src="./assets/new moon.webp" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>New moon party</h1>
+              <span>Manhathan</span>
+              <p>Harum, cum quis. Fuga reprehenderit voluptatem, esse reiciendis asperiores autem.</p>
+            </div>
+            <div class="plus">+</div>
+          </div>
+          <div class="eventsPic"
+           data-aos="fade-up"
+            data-aos-anchor='#eventsText'
+            data-aos-delay="900"
+            >
+            <img src="./assets/event pub.jpg" alt="">
+            <div class="eventDateGps">
+              <p class="eventDate">26 Nov</p>
+              <div class="eventGps">
+                <img src="./assets/gps.webp" alt="">
+              </div>
+            </div>
+            <div class="eventPicText">
+              <h1>Happy hour at pub</h1>
+              <span>Manhathan</span>
+              <p>Voluptatum ipsa, perspiciatis laborum incidunt a aut atque veritatis ex!</p>
+            </div>
+            <div class="plus">+</div>
+          </div>
+        </div>
+       
+      </div>
+
+    </div>
+    <div class="sponsor">
+      <img src="./assets/pixar.webp" alt="">
+      <img src="./assets/pirate.webp" alt="">
+      <img src="./assets/hymalayas.webp" alt="">
+      <img src="./assets/SA.webp" alt="">
+      <img src="./assets/south porth.webp" alt="">
+    </div>
+    <footer>
+      <p>Copyright &#169 All rights reserved | This template is made with  by <i class="far fa-heart"></i> <a href="https://colorlib.com/" bl>Colorlib</a> copied by me for practicing</p>
+      <div class="footerIcons">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-behance"></i>
+        <i class="fab fa-dribbble"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init({
+      once:true
+});
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
