@@ -162,7 +162,7 @@ form p{
 }
 form select{
     height: 40px;
-    width: 25%;
+    width: 23%;
 }
 .search-btn{
     background-color: #7643EA;
@@ -581,6 +581,7 @@ form select{
     display: flex;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     position: relative;
     background-color: white;
 }
@@ -669,15 +670,24 @@ footer{
     align-items: center;
     flex-wrap: wrap;
 }
+@media screen and (max-width:1030px) and (min-width:1000px) {
+    .eventsDiv{
+        height: 700px;
+    }
+    .mustSee{
+        height: 700px;
+        min-height: unset;
+    }
+}
 @media screen and (max-width:950px) {
     .mustSee{
-        height: 160vh !important;
+        height: 1300px;
     }
     .eventsGrid{
         grid-template-columns: 1fr;
     }
     .eventsDiv{
-        height: 150vh;
+        height: 1200px;
     }
 }
 @media screen and (max-width:700px) and (min-width:600px){
@@ -802,16 +812,30 @@ footer{
     }
 }
 @media screen and (max-width: 600px) {
-    
+    header{
+        height: 1000px;
+    }
     .headerSidebar{
         display: none;
     }
     .headerChild{
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
         justify-content: center;
     }
-    .headerForm{
+    .headerMid{
+        width: 100%;
+    }
+    .headerText{
+        text-align: center;
+    }
+    .headerText h1{
+        font-size: 25px;
+    }
+    .headerText span{
+        font-size: 20px;
     }
     .headerRow{
         display: flex;
@@ -994,6 +1018,9 @@ footer{
         height: 20%;
     }
     .eventsDiv{
-        height: 300vh;
+        height: 2000px;
+    }
+    .footerIcons{
+        width: 100px;
     }
 }
